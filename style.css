@@ -287,10 +287,10 @@ header a {
 @keyframes outImage {
     to {
         width: 150px;
-        height: 101.66px;
+        height: 80px;
         border-radius: 20px;
+        bottom: 15%;
         left: 50%;
-        bottom: 90px;
     }
 }
 
@@ -330,6 +330,9 @@ header a {
     .carousel .list .item .content .title {
         font-size: 30px;
     }
+    .carousel .list .item img {
+        object-position: 70%; /*important for small screen */
+    }
 }
 @media(max-width :533px) {
     .carousel .list .item .content {
@@ -337,6 +340,9 @@ header a {
         top: 15%;
         left: 50%;
         padding-right: 0;
+    }
+    .carousel .list .item img {
+        object-position: 70%; /*important for small screen */
     }
     .carousel .list .item .content .title {
         font-size: 2.25em;
